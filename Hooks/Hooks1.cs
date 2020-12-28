@@ -4,25 +4,33 @@ using System.Linq;
 using System.Text;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
+using CSpecFlowSelenium.Pages;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
 
 namespace CSpecFlowSelenium.Hooks
 {
     [Binding]
-    public sealed class Hooks1
+    public class Hooks1
     {
-        ChromeDriver driver;
+        public ChromeDriver driver;
+        
 
-         [BeforeScenario]
-        public void BeforeScenario()
+
+        [BeforeScenario]
+        public
+
+           void BeforeScenario()
         {
             driver = new ChromeDriver("C:/Users/Jerren/source/repos/CSpecFlowSelenium/Drivers");
-            driver.Navigate().GoToUrl(@"http://w3schools.com");
+            driver.Navigate().GoToUrl(@"http://automationpractice.com/index.php");
+            ScenarioContext.Current["driver"] = driver;
         }
 
         [AfterScenario]
         public void AfterScenario()
         {
-        //do studff
+            //do studff
         }
     }
 }

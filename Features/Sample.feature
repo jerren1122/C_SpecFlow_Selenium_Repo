@@ -9,7 +9,7 @@ Link to a feature: [Calculator](CSpecFlowSelenium/Features/Calculator.feature)
 
 @mytag
 Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+	Given the application navigates to the home page
+	And the user fills search in for the username text box
+	And the user clicks search
+	And the application navigates to the search results page 
