@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="87.0.4280.8800" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.5.186" />
 
     
@@ -25,7 +27,7 @@
 
   <ItemGroup>
     <Folder Include="Drivers\" />
-    <Folder Include="Hooks\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
 
 </Project>
