@@ -30,7 +30,7 @@ namespace CSpecFlowSelenium.Hooks
         [AfterScenario]
         public void AfterScenario()
         {
-            //do studff
+            driver.Close();
         }
     }
 }

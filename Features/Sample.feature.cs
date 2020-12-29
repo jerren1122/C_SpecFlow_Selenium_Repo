@@ -19,14 +19,8 @@ namespace CSpecFlowSelenium.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Calculator", Description=@"![Calculator](https://specflow.org/wp-content/uploads/2020/09/calculator.png)
-	In order to avoid silly mistakes
-	As a math idiot
-	I *want* to be told the **sum** of ***two*** numbers
-
-Link to a feature: [Calculator](CSpecFlowSelenium/Features/Calculator.feature)
-***Further read***: **[Learn more about how to generate Living Documentation](https://docs.specflow.org/projects/specflow-livingdoc/en/latest/LivingDocGenerator/Generating-Documentation.html)**", SourceFile="Features\\Sample.feature", SourceLine=0)]
-    public partial class CalculatorFeature
+    [TechTalk.SpecRun.FeatureAttribute("Sample", SourceFile="Features\\Sample.feature", SourceLine=0)]
+    public partial class SampleFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -40,13 +34,7 @@ Link to a feature: [Calculator](CSpecFlowSelenium/Features/Calculator.feature)
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Calculator", @"![Calculator](https://specflow.org/wp-content/uploads/2020/09/calculator.png)
-	In order to avoid silly mistakes
-	As a math idiot
-	I *want* to be told the **sum** of ***two*** numbers
-
-Link to a feature: [Calculator](CSpecFlowSelenium/Features/Calculator.feature)
-***Further read***: **[Learn more about how to generate Living Documentation](https://docs.specflow.org/projects/specflow-livingdoc/en/latest/LivingDocGenerator/Generating-Documentation.html)**", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Sample", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -82,15 +70,15 @@ Link to a feature: [Calculator](CSpecFlowSelenium/Features/Calculator.feature)
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Add two numbers", new string[] {
-                "mytag"}, SourceLine=10)]
-        public virtual void AddTwoNumbers()
+        [TechTalk.SpecRun.ScenarioAttribute("Run Web Automation", new string[] {
+                "mytag"}, SourceLine=3)]
+        public virtual void RunWebAutomation()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", null, tagsOfScenario, argumentsOfScenario);
-#line 11
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Run Web Automation", null, tagsOfScenario, argumentsOfScenario);
+#line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -110,17 +98,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 12
- testRunner.Given("the application navigates to the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 5
+ testRunner.Given("the application navigates to the HomePage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 13
- testRunner.And("the user fills search in for the username text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 6
+ testRunner.And("the user fills in shoes", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 14
- testRunner.And("the user clicks search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 15
- testRunner.And("the application navigates to the search results page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 7
+ testRunner.And("the user clicks Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
