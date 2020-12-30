@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CSpecFlowSelenium.Pages;
-using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
 
 namespace CSpecFlowSelenium.Pages
 {

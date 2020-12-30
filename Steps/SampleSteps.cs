@@ -1,9 +1,9 @@
 ﻿using TechTalk.SpecFlow;
-using OpenQA.Selenium.Support.PageObjects;
 using CSpecFlowSelenium.Pages;
 using OpenQA.Selenium;
 using System;
 using System.Reflection;
+using NUnit.Framework;
 
 namespace CSpecFlowSelenium.Steps
 
@@ -26,7 +26,11 @@ namespace CSpecFlowSelenium.Steps
             _driver = (IWebDriver)ScenarioContext.Current["driver"];
         }
 
-
+        [Given("the user validates the page url displays '(.*)'")]
+        public void TheUserValidatesThePageDisplays(string text)
+        {
+            Assert.IsTrue(_driver.Url.ToLower().Contains(text));
+        }
 
 
         [Given("the user fills in (.*)")]
