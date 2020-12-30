@@ -18,14 +18,7 @@
 --This is how we surface assertions into the step definition layer
 -- Need to also install NUnit as a nuget package for the solution: Install-Package Specflow.NUnit and then include it 
 
-
-We need to know how tagging works. 
--Be able to exclude and include tests 
-
-We need to run from the command line and create a batch file that captures those steps 
-
-
-
-
-
-Make this readme file nice 
+-Command Line Execution-
+--running the command "dotnet test" will run all tests in the SpecFlow suite. 
+--running the command "dotnet test --filter TestCategory=shoes" will only run the tests tagged with "@shoes"
+--This thread if you search for "dotnet" has a concise explanatation of how utilizing tagging functions. https://stackoverflow.com/questions/20613221/how-do-you-run-specflow-scenarios-from-the-command-line-using-mstest
