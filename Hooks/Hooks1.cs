@@ -18,6 +18,7 @@ namespace CSpecFlowSelenium.Hooks
 
 
         [BeforeScenario]
+        [Scope(Tag = "regression")]
         public
 
            void BeforeScenario()

@@ -1,6 +1,6 @@
 ﻿Feature: Sample
 
-@shoes
+@shoes @regression
 Scenario: Run Shoes Search Automation
 	Given the application navigates to the HomePage
 	And the user fills in shoes
@@ -9,7 +9,7 @@ Scenario: Run Shoes Search Automation
 	And the user clicks SelectFirstResult
 	And the user validates the page url displays 'shoes'
 
-@shirt
+@shirt @regression
 Scenario: Run Shirt Search Automation
 	Given the application navigates to the HomePage
 	And the user fills in shirt

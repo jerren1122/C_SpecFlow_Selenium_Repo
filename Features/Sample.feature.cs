@@ -71,11 +71,13 @@ namespace CSpecFlowSelenium.Features
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Run Shoes Search Automation", new string[] {
-                "shoes"}, SourceLine=3)]
+                "shoes",
+                "regression"}, SourceLine=3)]
         public virtual void RunShoesSearchAutomation()
         {
             string[] tagsOfScenario = new string[] {
-                    "shoes"};
+                    "shoes",
+                    "regression"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Run Shoes Search Automation", null, tagsOfScenario, argumentsOfScenario);
 #line 4
@@ -121,11 +123,13 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Run Shirt Search Automation", new string[] {
-                "shirt"}, SourceLine=12)]
+                "shirt",
+                "regression"}, SourceLine=12)]
         public virtual void RunShirtSearchAutomation()
         {
             string[] tagsOfScenario = new string[] {
-                    "shirt"};
+                    "shirt",
+                    "regression"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Run Shirt Search Automation", null, tagsOfScenario, argumentsOfScenario);
 #line 13
