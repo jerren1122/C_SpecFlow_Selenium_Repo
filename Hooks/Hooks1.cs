@@ -13,7 +13,7 @@ namespace CSpecFlowSelenium.Hooks
     [Binding]
     public class Hooks1
     {
-        public ChromeDriver driver;
+        private ChromeDriver driver;
         
 
 

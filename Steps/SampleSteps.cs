@@ -13,8 +13,8 @@ namespace CSpecFlowSelenium.Steps
     public sealed class SampleSteps
     {
         private readonly IWebDriver _driver;
-        public BasePage page;
-        public Type t; 
+        private BasePage page;
+        private Type t; 
 
 
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
